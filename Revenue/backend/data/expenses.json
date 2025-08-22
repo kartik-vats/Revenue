@@ -1,0 +1,72 @@
+[
+  {
+    "description": "AWS Cloud Services",
+    "amount": 15000,
+    "category": "Cloud & Hosting",
+    "vendor": "Amazon",
+    "status": "Approved"
+  },
+  {
+    "description": "Office Rent",
+    "amount": 80000,
+    "category": "Rent",
+    "vendor": "Property Management",
+    "status": "Approved"
+  },
+  {
+    "description": "Team Lunch",
+    "amount": 2500,
+    "category": "Dining",
+    "vendor": "Local Restaurant",
+    "status": "Approved"
+  },
+  {
+    "description": "Marketing Tools",
+    "amount": 12000,
+    "category": "Marketing",
+    "vendor": "Marketing Platform",
+    "status": "Approved"
+  },
+  {
+    "description": "Software Licenses",
+    "amount": 8000,
+    "category": "Software",
+    "vendor": "Software Company",
+    "status": "Approved"
+  },
+  {
+    "description": "Internet & Phone",
+    "amount": 2000,
+    "category": "Utilities",
+    "vendor": "Telecom Provider",
+    "status": "Approved"
+  },
+  {
+    "description": "Office Supplies",
+    "amount": 1500,
+    "category": "Equipment",
+    "vendor": "Office Supply Store",
+    "status": "Approved"
+  },
+  {
+    "description": "Travel Expenses",
+    "amount": 25000,
+    "category": "Travel",
+    "vendor": "Travel Agency",
+    "status": "Approved"
+  },
+  {
+    "description": "Training Course",
+    "amount": 18000,
+    "category": "Training",
+    "vendor": "Training Institute",
+    "status": "Approved"
+  },
+  {
+    "description": "Health Insurance",
+    "amount": 12000,
+    "category": "Health",
+    "vendor": "Insurance Company",
+    "status": "Approved"
+  }
+]

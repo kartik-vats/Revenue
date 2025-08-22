@@ -1,0 +1,68 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+   *** CRITICAL GLOBAL STYLES FOR FULL WIDTH AND NO UNWANTED SCROLLING ***
+   These rules ensure that the entire page (html, body, and your React app's root div)
+   correctly occupies 100% of the viewport width and height,
+   and prevents any default browser margins or horizontal scrollbars.
+*/
+html,
+body,
+#root { /* #root is the default ID for the div where React app mounts */
+  width: 100%;           /* Ensure it takes 100% of the parent's width (viewport) */
+  min-height: 100vh;     /* Ensure it covers at least the full viewport height */
+  margin: 0;             /* Remove default browser margins */
+  padding: 0;            /* Remove default browser paddings */
+  box-sizing: border-box; /* Include padding and border in the element's total width/height */
+  overflow-x: hidden;    /* THIS IS THE KEY: Prevents horizontal scrolling on the entire page. */
+                          /* If content inside overflows, it will be clipped, or if you have */
+                          /* `overflow-x-auto` on a child (like your table), that child will scroll. */
+  /* Remove text-align: center; from here unless you specifically intend to center all inline content */
+  /* text-align: center; */
+}
+
+/* Optional: Set a default font for the whole app */
+body {
+  font-family: 'Inter', sans-serif; /* Assuming you have Inter font loaded */
+}
+
+/* Your existing styles for logo, keyframes, card, read-the-docs can go below this */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
